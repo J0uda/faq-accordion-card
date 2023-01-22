@@ -79,10 +79,21 @@ body {
     left: -19%;
 }
 
-.answer {
+.question_wrapper_inner > .answer {
     display: none;
 }
 
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--dark-grayish-blue);
+    font-size: 0.9rem;
+}
+
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
 .question_wrapper {
     margin-top: 70px;
 }
